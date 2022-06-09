@@ -1,0 +1,135 @@
+DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        <center>
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    min-height: 100%;
+    text-align: center;
+    text-shadow: 3px;
+}
+
+.grid-container>*{
+    box-shadow: -1px 1px 7px 0px rgba(rgb(0, 255, 0), rgb(128, 0, 60), rgb(0, 255, 21), alpha);
+    border-radius: 2px;
+    padding: 10px;
+    text-align:center;
+    
+}
+<center>{
+        
+    }
+.header{
+    grid-area: header;
+    background-color: aquamarine;
+}
+
+.navbar{
+    grid-area: navbar;
+    background-color: bisque;
+}
+
+.main{
+    grid-area: main;
+    background-color: cadetblue;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: chocolate;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: cornflowerblue;
+}
+
+.grid-container{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: "header"
+    "navbar"
+    "main"
+    "sidebar"
+    "footer"
+}
+@media (min-width:400px) {
+    .grid-container{
+        grid-template:
+        "header header" 100px
+        "navbar navbar" 50px
+        "sidebar main" auto
+        "footer footer" 100px/200px auto;
+    }
+}
+
+@media (main-width:600px){
+    
+}
+
+.grid-container{
+    grid-template:
+    "header header"
+    "navbar navbar"
+    "sidebar main"
+    "footer footer";
+}
+
+@media (min-width:900px){
+    .grid-container{
+        grid-template:
+        "header header header" 100px
+        "navbar main sidebar" auto
+        "footer footer footer" 100px/200px auto;
+    }
+}
+    </style>
+</head>
+
+<body class="grid-container">
+        <header class="header"><h1>DOMINGUEZ GARCIA AXEL JIOVANNI </h1>
+             </header>
+                
+    <nav class="navbar"><h1> Datos personales  </h1>
+        <h3>fecha de nacimiento: 23 de febrero del 2002  </h3>
+        <h3>edad:20 años</h3>
+        <h3> primaria: republica de yuguslavia</h3>
+        <h3> secundaria: ricardo flores magon</h3> 
+        <h3> preparatoria: conversa</h3>
+        <h3> universidad: tecnologico gustavo a madero</h3>
+    </nav>
+    <aside class="sidebar"><h1> Informacion personal</h1>
+       <h3> Me considero una persona  sociable, con caracter fuerte  me gusta  salir a varios lugares a conocer en familia , me gusta el futbol ,me gusta la mecanica restaurar coches desde cero me gusta demaciado los arrancones me gusta pasear a mi perro correr con el, mis hobbies favoritos son las serpientes las motos y los carros modificados y sobre todo las computadoras y tambien los videojuegos 
+    </h4></h3>
+    </aside>
+    <article class="main"><h1> Experencia laboral</h1>
+        <h4>   Me especialiso en programacion estoy aprendiendo a trabajar con java e echo codigos de html, tambien trabaje en un taller mecanico modficando carros desde cero por el momento estoy estudiando pero me gustaria trabjar para obtener una mejor experiencia laboral.</h4>
+    </article>
+    <footer class="footer"><h1> Datos de contacto</h1>
+        <h1>
+            <Label for="email">correo:</label><a href="mailto:" name="email"> daxeljiovanni@gmail.com<a/>
+            
+            <br>
+            <Label for="telephone"> tel <celular:</celular:></label><a href="tel:">5526949457 </a>. </div>
+            </Footer>
+            </h1>
+    </footer>
+
+</body>
+</html>
